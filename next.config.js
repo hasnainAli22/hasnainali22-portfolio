@@ -5,9 +5,10 @@ const isDev = true ? process.env.NODE_ENV === 'development' : false;
 const nextConfig = {
   reactStrictMode: true,
   output: isDev ? "standalone" : "export",
-  basePath: isDev ? "" : "/hasnainali22-portfolio",
-  assetPrefix: isDev ? "" : '/hasnainali22-portfolio/',
-  // basePath: '/hasnainali22-portfolio', // Replace with your GitHub repository name
+  // basePath: isDev ? "" : "/hasnainali22-portfolio",
+  // assetPrefix: isDev ? "" : '/hasnainali22-portfolio/',
+  basePath: '/hasnainali22-portfolio', // Replace with your GitHub repository name
+  output: '/hasnainali22-portfolio/',
   swcMinify: true,
   images: {
     remotePatterns: [
