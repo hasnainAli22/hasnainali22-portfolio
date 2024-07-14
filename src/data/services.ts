@@ -6,11 +6,11 @@ const services: IServiceItem[] = [
     id: 1,
     title: "Full Stack Development",
     icons: [
-      `${basePath}/skills/react.svg`,
-      `${basePath}/skills/nextjs.png`,
-      `https://static.djangoproject.com/img/logos/django-logo-negative.svg`,
-      `${basePath}/skills/redux.svg`,
-      `${basePath}/skills/typescript.svg`,
+      `/skills/react.svg`,
+      `/skills/nextjs.png`,
+      `/skills/django-logo-negative.png`,
+      `/skills/redux.svg`,
+      `/skills/typescript.svg`,
     ],
     shortDescription: "I build dynamic and responsive web applications.",
     description:
@@ -21,7 +21,7 @@ const services: IServiceItem[] = [
     title: "Backend Development",
     icons: [
       "/skills/python.svg",
-      "https://static.djangoproject.com/img/logos/django-logo-negative.svg",
+      "/skills/django-logo-negative.png",
       "/skills/graphql.svg",
       "/skills/docker.svg",
       "/skills/aws.svg",

@@ -12,6 +12,7 @@ import Column from "@/components/core/Column";
 import Row from "@/components/core/Row";
 import CardBox from "@/components/core/CardBox";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const ProjectItem = ({ project }: { project: IProjectItem }) => {
   const router = useRouter();
 
@@ -29,7 +30,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
       <Column classNames="w-full items-center justify-start">
         <Row classNames="w-[2.5rem] md:w-[3rem] aspect-square items-center justify-center">
           <Image
-            src={project.icon}
+            src={`${basePath}${project.icon}`}
             alt={`project-${project.title}`}
             width={100}
             height={100}
