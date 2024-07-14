@@ -5,6 +5,12 @@ import { useEffect } from "react";
 import { cn } from "@/utils/cn";
 import { IServiceItem } from "@/types";
 import Image from "next/image";
+import getConfig from "next/config";
+
+// const { basePath } = getConfig();
+// console.log("base path",basePath)
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+// const basePath = publicRuntimeConfig?.basePath || "";
 
 export function AnimatedServiceCard({
   item,
@@ -79,7 +85,7 @@ const IconSkeleton = ({ item }: Readonly<{ item: IServiceItem }>) => {
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         <IconContainer className="h-8 w-8 circle-1">
           <Image
-            src={item.icons[0]}
+            src={`${basePath}${item.icons[0]}`}
             alt={`icon-1`}
             width={144}
             height={144}
@@ -92,7 +98,7 @@ const IconSkeleton = ({ item }: Readonly<{ item: IServiceItem }>) => {
         </IconContainer>
         <IconContainer className="h-12 w-12 circle-2">
           <Image
-            src={item.icons[1]}
+            src={`${basePath}${item.icons[1]}`}
             alt={`icon-2`}
             width={144}
             height={144}
@@ -105,7 +111,7 @@ const IconSkeleton = ({ item }: Readonly<{ item: IServiceItem }>) => {
         </IconContainer>
         <IconContainer className="circle-3">
           <Image
-            src={item.icons[2]}
+            src={`${basePath}${item.icons[2]}`}
             alt={`icon-3`}
             width={144}
             height={144}
@@ -118,7 +124,7 @@ const IconSkeleton = ({ item }: Readonly<{ item: IServiceItem }>) => {
         </IconContainer>
         <IconContainer className="h-12 w-12 circle-4">
           <Image
-            src={item.icons[3]}
+            src={`${basePath}${item.icons[3]}`}
             alt={`icon-4`}
             width={144}
             height={144}
@@ -131,7 +137,7 @@ const IconSkeleton = ({ item }: Readonly<{ item: IServiceItem }>) => {
         </IconContainer>
         <IconContainer className="h-8 w-8 circle-5">
           <Image
-            src={item.icons[4]}
+            src={`${basePath}${item.icons[4]}`}
             alt={`icon-5`}
             width={144}
             height={144}
