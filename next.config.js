@@ -20,9 +20,3 @@ const nextConfig = {
   },
 };
 module.exports = nextConfig;
-// module.exports = withSentryConfig(nextConfig, {
-//   org: "nixlab-technologies",
-//   project: "portfolio-nextjs",
-//   authToken: process.env.SENTRY_AUTH_TOKEN,
-//   silent: false,
-// });

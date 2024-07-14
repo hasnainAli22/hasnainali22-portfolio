@@ -1,15 +1,16 @@
 import { IServiceItem } from "@/types";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const services: IServiceItem[] = [
   {
     id: 1,
     title: "Full Stack Development",
     icons: [
-      "/skills/react.svg",
-      "/skills/nextjs.png",
-      "https://static.djangoproject.com/img/logos/django-logo-negative.svg",
-      "/skills/redux.svg",
-      "/skills/typescript.svg",
+      `${basePath}/skills/react.svg`,
+      `${basePath}/skills/nextjs.png`,
+      `https://static.djangoproject.com/img/logos/django-logo-negative.svg`,
+      `${basePath}/skills/redux.svg`,
+      `${basePath}/skills/typescript.svg`,
     ],
     shortDescription: "I build dynamic and responsive web applications.",
     description:
