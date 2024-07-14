@@ -15,6 +15,9 @@ const nextConfig = {
       { protocol: "https", hostname: "**.github.com" },
     ],
   },
+  publicRuntimeConfig: {
+    basePath: isDev ? "" : "/hasnainali22-portfolio",
+  },
 };
 module.exports = nextConfig;
 // module.exports = withSentryConfig(nextConfig, {
