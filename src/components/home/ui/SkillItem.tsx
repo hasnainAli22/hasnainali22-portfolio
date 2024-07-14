@@ -4,6 +4,8 @@ import CardBox from "@/components/core/CardBox";
 import Row from "@/components/core/Row";
 import Column from "@/components/core/Column";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const SkillItem = ({ data }: { data: ISkillListItem }) => {
   return (
     <CardBox classNames="p-4 items-center justify-start bg-[var(--textColor10)] w-full group">
@@ -19,7 +21,7 @@ const SkillItem = ({ data }: { data: ISkillListItem }) => {
               >
                 {skill.icon ? (
                   <Image
-                    src={skill.icon}
+                    src={`${basePath}${skill.icon}`}
                     alt={`logo-${skill.title}`}
                     width={144}
                     height={144}
