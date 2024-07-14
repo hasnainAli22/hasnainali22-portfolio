@@ -19,6 +19,7 @@ const nextConfig = {
     basePath: isDev ? "" : "/hasnainali22-portfolio",
   },
 };
+console.log("Base Path:", nextConfig.basePath);
 module.exports = nextConfig;
 // module.exports = withSentryConfig(nextConfig, {
 //   org: "nixlab-technologies",
