@@ -2,28 +2,16 @@ import { IExperienceItem } from "@/types";
 
 const experiences: IExperienceItem[] = [
   {
-    designation: "Lead Full Stack AI Developer",
-    company: "Your AI Builder",
-    startDate: "December 2023",
-    endDate: "",
-    isCurrentJob: true,
-    location: "Remote",
+    designation: "Full Stack Engineer / Artificial Intelligence Developer",
+    company: "The Analog IT Solution PVT LTD",
+    startDate: "September 2022",
+    endDate: "July 2024",
+    isCurrentJob: false,
+    location: "Faisalabad, Pakistan",
     shortDescription:
       "I excel in crafting advanced web applications that seamlessly integrate cutting-edge AI technologies.",
     description:
-      "As a Lead Full Stack AI Developer at Your AI Builder, I specialize in crafting advanced web applications that seamlessly integrate cutting-edge AI technologies. Known for leveraging modern tech stacks and adhering to the highest standards of clean code practices, I streamline workflows and achieve remarkable milestones. Notably, I optimized website loading times by up to 80% through image optimization, minimized main-thread work, and implemented robust SEO strategies. Beyond technical prowess, I excel in both backend and frontend development, having resolved over 100 bugs and conducted thorough code reviews ensuring top-notch quality and client satisfaction. Passionate about driving innovation, I strive for excellence in every project, pushing boundaries and delivering solutions that surpass expectations."
-  },
-  {
-    designation: "Full Stack and AI Developer (Freelance)",
-    company: "",
-    startDate: "September 2022",
-    endDate: "December 2023",
-    isCurrentJob: false,
-    location: "Remote",
-    shortDescription:
-      "Developed and deployed full stack web applications and advanced AI solutions for various clients.",
-    description:
-      "As a freelance Full Stack and AI Developer, I specialized in developing and deploying full stack web applications and advanced AI solutions. Focused on AI projects including computer vision, GANs using PyTorch, and machine learning and deep learning techniques. My work included creating and integrating machine learning models, developing computer vision applications, and implementing GANs for various use cases. Utilizing technologies such as Django, React, and Redux, along with AI libraries, I delivered customized solutions that significantly enhanced client operations and user experiences."
+      "I worked as a Full Stack Engineer and AI Developer, utilizing technologies such as Django, Next.js, Redux, PostgreSQL, and Docker for web development. In the AI domain, I leveraged tools like PyTorch, NumPy, and Matplotlib to develop machine learning and deep learning models. My role involved building and maintaining robust web applications, implementing front-end and back-end functionalities, and integrating AI solutions to enhance application capabilities."
   },
   {
     designation: "Full Stack Web Developer",
